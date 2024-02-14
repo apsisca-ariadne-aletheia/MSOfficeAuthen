@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microsoft Authentication</title>
+</head>
+<body>
+  <header>
+    <h1>Microsoft Authentication Example</h1>
+  </header>
+  <main>
+    <% if (isAuthenticated) { %>
+      <h2>Hello <%= account.username %></h2>
+      <a href="/logout">Logout</a>
+    <% } else { %>
+      <h2>Welcome Guest</h2>
+      <a href="/login">Login with Microsoft</a>
+    <% } %>
+  </main>
+</body>
+</html>
